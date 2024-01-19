@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Ceyaa</title>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon" />
+
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hello Baby <span>♡♡♡</span></h1>
+        <p>Disini aku cuman mau ngasih pesan aja buat kamu. Dibaca yaa...!!!</p>
+        <a href="#msg" class="cta" onClick="enableScroll()">Read Now</a>
+      </main>
+    </section>
+    <!-- Hero end -->
+
+    <!-- Message start -->
+    <section class="msg" id="msg">
+      <h2><span>Message</span> for you<span>.</span></h2>
+      <p>
+        Maaf, aku cuman bisa ngasih kamu ini doang gak kek orang" yang bisa
+        ngasih hadiah yang bagus, makan enak. Tapi next time aku pengen ajak
+        kamu ke Coffee Shop gtu mau nda? mau yahh pliss... oke aku anggap kamu
+        mau hehe. nahh, skrng kamu baca dlu ini yaa sayang.
+      </p>
+      <h4>♡♡♡</h4>
+
+      <div class="int" style="border: 1px solid">
+        <h4>Hello Adek Ceyaaku Terayang...</h4>
+        <p>Bby lagi maen ML ya? Tapi klo kamu buka ini brrti sdh beres dong</p>
+        <p>
+          Aku cuma mau kasih tau kamu, i'm very lucky to have you! aku suka
+          semua tentang kamu, aku suka banget kalo kamu marahin aku, aku suka
+          kalo kamu ingetin aku buat makan, dan selalu semangatin aku dalam
+          segala hal, aku suka banget denger suara kamu yang selalu bikin aku
+          tenang, pokoknya aku suka semuanya tentang kamu.
+        </p>
+        <p>
+          Dan kamu gaperlu nanya lagi kalo aku sayang apa ngga sama kamu karna
+          pasti jawaban nya, yaa aku sayang banget banget sama kamu. Kamu orang
+          yang aku butuhin sebelum tidur dan bakal jadi orang yang aku butuhin
+          setiap hari. Aku bener-bener sayang sama kamu, aku gamau kehilangan
+          kamu, aku gamau kamu pergi dari aku, aku gamau kamu hilang tanpa
+          kabar, aku juga gamau kita lost contact. maafin aku selalu buat
+          masalah, maaf gara-gara aku kita jadi sering berantem, tapi masalah
+          apapun yg terjadi jangan pergi ya?
+        </p>
+        <p>
+          Aku tau kok aku salah, aku ga bisa ngertiin kamu, aku selalu
+          berlebihan selalu overthingking sama kamu, karena yaa aku ga pernah se
+          sayang ini sama orang. Aku minta maaf dan jujur, aku bersyukur dengan
+          apa yang kamu kasih ke aku tapi sebaliknya, aku selalu buat kamu
+          kecewa yaa? pokokya aku minta maaf lagi dan lagi sama kamu. Makasih
+          udah selalu buat aku bahagia dengan perhatian perhatian kecil yang
+          kamu kasih, aku bener-bener beruntung ketemu kamu, aku gamau kamu
+          pergi dan aku ga ikhlas kalo kamu beneran pergi, aku janji aku bakal
+          ada terus buat kamu, kalo kamu lagi ada masalah cerita sama aku yaa?
+          dan jangan pernah ngerasa kalo kamu sendirian yaaa? ada aku disini,
+          yang bakal dengerin keluh kesah kamu.
+        </p>
+        <p>
+          Sekali lagi mau bilang makasih sama kamu udah ada terus sama aku,
+          seberuntung ini aku ketemu kamu, i love you, and you are always a
+          favorite place in my heart, don't ever feel like you're alone, okay?
+          don't feel lonely either, there's me, honey, i really love you, i
+          won't be too bored to talk like that.
+        </p>
+        <p>Thank u for being here another day of u being in my life, ily</p>
+
+        <div class="sign">
+          <h3>jeeva</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Message end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://github.com/jeevaxv"><i class="bi bi-github"></i></a>
+        <a href="https://wa.me/6282258712173"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/primappratama/"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a href="https://twitter.com/primappratama"
+          ><i class="bi bi-twitter-x"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#msg">Message</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">@primappratama</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <script>
+      const rootElement = document.querySelector(":root");
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem("opened", "true");
+      }
+
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+    </script>
+  </body>
+</html>
